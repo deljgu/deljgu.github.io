@@ -1,348 +1,381 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
 
-            /* change style here */
-            :root {
-                --color: #3f5c94;
-                /*--color: #ff6002;*/
-                --colorFormerFirm1: rgb(51, 204, 153);
-            }
+<head>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
 
-            * {
-                margin: 0;
-                border: 0;
-                padding: 0;
-                outline: none;
-                font-size: 13px;
-                font-family: 'Open Sans Condensed', sans-serif;
-                font-style: normal;
-                color: gray;
-                font-weight: 300;
-                position: relative;
-            }
+        /* change style here */
+        :root {
+            /* --color: #3f5c94; */
+            --color: rgb(160, 48, 51);
+            /*--color: #ff6002;*/
+            --colorFormerFirm2: rgb(51, 204, 153);
+            --colorFormerFirm1: rgb(160, 48, 51);
+        }
 
-            body {
-                width: 100%;
-                height: 100%;
-                background-color: gray;
-            }
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            outline: none;
+            font-size: 13px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-style: normal;
+            color: gray;
+            font-weight: 300;
+            position: relative;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+        }
 
 
-            .page {
-                background-image: linear-gradient(90deg, rgb(240, 240, 240) 38%, white 38%);
-                padding: 40px 30px;
-                width: 535px;
-                height: 762px;
-                margin: 10px auto;
-            }
+        .page {
+            background-image: linear-gradient(90deg, rgb(240, 240, 240) 38%, white 38%);
+            padding: 40px 30px;
+            width: 535px;
+            height: 762px;
+            margin: 10px auto;
+        }
 
-            header {
-                margin-top: -20px;
-                margin-left: -30px;
-                width: calc(100% + 60px);
-                border-bottom: 2px solid rgb(240, 240, 240);
-                padding: 0 0 10px 0;
-                background-color: white;
-                margin-bottom: 10px;
-            }
+        header {
+            margin-top: -20px;
+            margin-left: -30px;
+            width: calc(100% + 60px);
+            border-bottom: 2px solid rgb(240, 240, 240);
+            padding: 0 0 10px 0;
+            background-color: white;
+            margin-bottom: 10px;
+        }
 
-            header .section{
-                padding: 0 30px;
-            }
+        header .section {
+            padding: 0 30px;
+        }
 
-            .section {
-                clear: both;
-                width: 100%;
-            }
+        .section {
+            clear: both;
+            width: 100%;
+        }
 
-            .section.heading {
-                height: 60px;
-                overflow-y: visible;
-            }
+        .section.heading {
+            height: 60px;
+            overflow-y: visible;
+        }
 
-            .left {
-                width: calc(38% - 30px);
-                float: left;
-            }
+        .left {
+            width: calc(38% - 30px);
+            float: left;
+        }
 
-            .right {
-                width: calc(62% - 30px);
-                float: right;
-                margin-right: 20px;
-            }
+        .right {
+            width: calc(62% - 30px);
+            float: right;
+            margin-right: 20px;
+        }
 
-            h1 {
-                font-size: 35px;
-                line-height: 50px;
-                float: left;
-                font-weight: 700;
-                text-transform: capitalize;
-            }
+        h1 {
+            font-size: 35px;
+            line-height: 50px;
+            float: left;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
 
-            h2 {
-                font-size: 15px;
-                line-height: 60px;
-                float: left;
-                margin-left: 20px;
-                color: var(--color);
-                font-weight: 700;
-                text-transform: lowercase;
-            }
+        h2 {
+            font-size: 15px;
+            line-height: 60px;
+            float: left;
+            margin-left: 20px;
+            color: var(--color);
+            font-weight: 700;
+            text-transform: lowercase;
+        }
 
-            h3 {
-                font-size: 16px;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                width: 100%;
-                border-bottom: 1px solid gray;
-                margin-bottom: 10px;
-            }
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+            margin-bottom: 10px;
+        }
 
-            h4 {
-                font-size: 20px;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                border-bottom: 1px solid lightgray;
-                margin-bottom: 10px;
-            }
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 10px;
+        }
 
-            h5 {
-                font-weight: 700;
-                font-size: 18px;
-                margin-bottom: 2px;
-            }
+        h5 {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
 
-            h5 {
-                font-weight: 700;
-                font-size: 18px;
-            }
+        h5 {
+            font-weight: 700;
+            font-size: 16px;
+        }
 
-            h6 {
-                font-size: 11px;
-                margin-bottom: 8px;
-                color: lightgray;
-                font-weight: 700;
-            }
+        h6 {
+            font-size: 11px;
+            margin-bottom: 8px;
+            color: lightgray;
+            font-weight: 700;
+        }
 
-            th {
-                font-size: 10px;
-                text-transform: uppercase;
-                color: var(--color);
-                width: 50px;
-                text-align: left;
-                letter-spacing: 1px;
-                font-weight: 700;
-            }
+        th {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: var(--color);
+            width: 50px;
+            text-align: left;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
 
-            td {
-                width: 200px
-            }
+        td {
+            width: 200px
+        }
 
-            #photo {
-                background-image: url(18193750_1340960889317972_285815437139723107_n.jpg); /* path starting from location of this file */
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                border-radius: 50%;
-                width: 100px;
-                height: 100px;
-                position: absolute;
-                top: 0;
-                right: 90px;
-                filter: contrast(70%) brightness(120%);
-                /*
+        #photo {
+            background-image: url(18193750_1340960889317972_285815437139723107_n.jpg);
+            /* path starting from location of this file */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            right: 90px;
+            filter: contrast(70%) brightness(120%);
+            /*
                 background-color: var(--color);
                 background-blend-mode: luminosity;
                 */
-            }
+        }
 
-            p.pg {
-                font-size: 14px;
-                line-height: 16px;
-            }
+        p.pg {
+            font-size: 14px;
+            line-height: 16px;
+        }
 
-            p.language {
-                letter-spacing: 2px;
-                font-weight: 700;
-                text-decoration: underline;
-            }
+        p.language {
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
 
-            p.lang {
-                letter-spacing: 1px;
-                float: left;
-                text-align: left;
-            }
+        p.lang {
+            letter-spacing: 1px;
+            float: left;
+            text-align: left;
+        }
 
-            div.lang {
-                color: var(--color);
-                font-weight: 700;
-                font-size: 13px;
-                clear: both;
-                border-bottom: 1px dotted gray;
-                text-align: right;
-            }
+        div.lang {
+            color: var(--color);
+            font-weight: 700;
+            font-size: 13px;
+            clear: both;
+            border-bottom: 1px dotted gray;
+            text-align: right;
+        }
 
-            p.skill {
-                letter-spacing: 1px;
-            }
+        p.skill {
+            letter-spacing: 1px;
+        }
 
-            div.skill {
-                height: 10px;
-                border-radius: 5px;
-                border: 3px solid white;
-            }
+        div.skill {
+            height: 10px;
+            border-radius: 5px;
+            border: 3px solid white;
+        }
 
-            #skill-1 {
-                background-image: linear-gradient(90deg, var(--color) 80%, white 0%);
-            }
-            #skill-2 {
-                background-image: linear-gradient(90deg, var(--color) 65%, white 0%);
-            }
-            #skill-3 {
-                background-image: linear-gradient(90deg, var(--color) 90%, white 0%);
-            }
-            #skill-4 {
-                background-image: linear-gradient(90deg, var(--color) 45%, white 0%);
-            }
-            #skill-5 {
-                background-image: linear-gradient(90deg, var(--color) 70%, white 0%);
-            }
-            #skill-6 {
-                background-image: linear-gradient(90deg, var(--color) 85%, white 0%);
-            }
-            #skill-7 {
-                background-image: linear-gradient(90deg, var(--color) 85%, white 0%);
-            }
-            #skill-8 {
-                background-image: linear-gradient(90deg, var(--color) 70%, white 0%);
-            }
-            #skill-9 {
-                background-image: linear-gradient(90deg, var(--color) 100%, white 0%);
-            }
-            #skill-10 {
-                background-image: linear-gradient(90deg, var(--color) 55%, white 0%);
-            }
-            #skill-11 {
-                background-image: linear-gradient(90deg, var(--color) 55%, white 0%);
-            }
-            #skill-12 {
-                background-image: linear-gradient(90deg, var(--color) 45%, white 0%);
-            }
-            #skill-13 {
-                background-image: linear-gradient(90deg, var(--color) 40%, white 0%);
-            }
-            #skill-14 {
-                background-image: linear-gradient(90deg, var(--color) 40%, white 0%);
-            }
+        #skill-1 {
+            background-image: linear-gradient(90deg, var(--color) 80%, white 0%);
+        }
 
-            li {
-                letter-spacing: 1px;
-                margin-left: 16px;
-            }
+        #skill-2 {
+            background-image: linear-gradient(90deg, var(--color) 40%, white 0%);
+        }
 
-            quote {
-                font-style: italic;
-                font-size: 13px;
-            }
-            ul > img{
-                height: 66px;
-                opacity: 0.7;
-                filter: alpha(opacity=50);
-            }
-            .targetFirm{
-                color: var(--color);
-                font-weight: bold;
-            }
-            .firm1{
-                color: var(--colorFormerFirm1);
-                font-weight: bold;
-            }
-            .firm2{
-                
-                font-weight: bold;
-                color: rgb(255, 70, 0);
-                background: -webkit-linear-gradient(rgb(255, 70, 0), rgb(255, 230, 0));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            i{
-                font-style: italic;
-            }
-            #posljednjeAzuriran{
-                position: absolute;
-                top: -12%;
-                right: 1%;
-                color: #CCC;
-            }
-            .titula{
-                color: var(--color);
-            }
-            h6.titula {
-                font-style: italic;
-            }
-        </style>
-        <title>CV | Tomislav Gudelj</title>
-    </head>
-    <body>
-        <!-- new page -->
-        <div class="page">
-            <!-- personal information -->
-            <header>
-            	<a href="#" id="LangCro"><img src="cro.png"  onclick="changeLangCro()" /></a>
-            	<a href="#" id="LangUsa"><img src="usa.png" onclick="changeLangUsa()" /></a>
-                <label id="posljednjeAzuriran">Dokument posljednje ažuriran na datum: 24.01.2019</label>
-                <br />
-                <div class="section heading">
-                    <h1>Tomislav Gudelj</h1>
-                    <h2 class="color">mag. ing. comp.</h2>
-                    <div id="photo"></div>
-                </div>
-                <div class="section">
-                    <table>
-                        <tr>
-                            <th>email</th>
-                            <td>grudelj@gmail.com</td>
-                            <th id="Telefon">Telefon</th>
-                            <td>+385 92 239 7853</td>
-                        </tr>
-                        <tr>
-                            <th>LinkedIn</th>
-                            <td><a href="https://www.linkedin.com/in/tomislav-gudelj-98316963/">Tomislav Gudelj</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <br />
-            </header>
-            <div class="left">
-                <h3 id="Prijevod0">Vještine</h3>
-                <p class="language" id="Prijevod1">Tehničke Vještine</p>
-                <p class="skill">C#.NET</p>
-                <div class="skill" id="skill-1"></div>
-                <p class="skill">ASP.NET</p>
-                <div class="skill" id="skill-2"></div>
-                <p class="skill">SQLSERVER / MSSQL</p>
-                <div class="skill" id="skill-3"></div>
-                <p class="skill">Frontend</p>
-                <div class="skill" id="skill-4"></div>
-                <br />
-                <p class="language" id="Prijevod2">Ostale Vještine</p>
-                <p class="skill" id="Prijevod3">Menadžment Vremenom</p>
-                <div class="skill" id="skill-5"></div>
-                <p class="skill" id="Prijevod4">Timski Rad i Komunikacija</p>
-                <div class="skill" id="skill-6"></div>
-                <p class="skill" id="Prijevod5">Rješavanje Problema</p>
-                <div class="skill" id="skill-7"></div>
-                <p class="skill" id="Prijevod6">Predviđanje Zahtjeva Klijenata</p>
-                <div class="skill" id="skill-8"></div>
-                <p class="skill" id="Prijevod7">Uključivanje Savjeta</p>
-                <div class="skill" id="skill-9"></div>
-                <!--
+        #skill-3 {
+            background-image: linear-gradient(90deg, var(--color) 90%, white 0%);
+        }
+
+        #skill-4 {
+            background-image: linear-gradient(90deg, var(--color) 95%, white 0%);
+        }
+
+        #skill-5 {
+            background-image: linear-gradient(90deg, var(--color) 55%, white 0%);
+        }
+
+        #skill-6 {
+            background-image: linear-gradient(90deg, var(--color) 70%, white 0%);
+        }
+
+        #skill-7 {
+            background-image: linear-gradient(90deg, var(--color) 85%, white 0%);
+        }
+
+        #skill-8 {
+            background-image: linear-gradient(90deg, var(--color) 70%, white 0%);
+        }
+
+        #skill-9 {
+            background-image: linear-gradient(90deg, var(--color) 100%, white 0%);
+        }
+
+        #skill-10 {
+            background-image: linear-gradient(90deg, var(--color) 95%, white 0%);
+        }
+
+        #skill-11 {
+            background-image: linear-gradient(90deg, var(--color) 55%, white 0%);
+        }
+
+        #skill-12 {
+            background-image: linear-gradient(90deg, var(--color) 45%, white 0%);
+        }
+
+        #skill-13 {
+            background-image: linear-gradient(90deg, var(--color) 40%, white 0%);
+        }
+
+        #skill-14 {
+            background-image: linear-gradient(90deg, var(--color) 40%, white 0%);
+        }
+
+        li {
+            letter-spacing: 1px;
+            margin-left: 16px;
+        }
+
+        quote {
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        ul>img {
+            height: 66px;
+            opacity: 0.7;
+            filter: alpha(opacity=50);
+        }
+
+        .targetFirm {
+            color: var(--color);
+            font-weight: bold;
+        }
+
+        .firm1 {
+            color: var(--colorFormerFirm1);
+            font-weight: bold;
+        }
+
+        .firm2 {
+            color: var(--colorFormerFirm2);
+            font-weight: bold;
+        }
+
+        .firm3 {
+
+            font-weight: bold;
+            color: rgb(255, 70, 0);
+            background: -webkit-linear-gradient(rgb(255, 70, 0), rgb(255, 230, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        i {
+            font-style: italic;
+        }
+
+        #posljednjeAzuriran {
+            position: absolute;
+            top: -12%;
+            right: 1%;
+            color: #CCC;
+        }
+
+        .titula {
+            color: var(--color);
+        }
+
+        h6.titula {
+            font-style: italic;
+        }
+    </style>
+    <title>CV | Tomislav Gudelj</title>
+</head>
+
+<body>
+    <!-- new page -->
+    <div class="page">
+        <!-- personal information -->
+        <header>
+            <a href="#" id="LangCro"><img src="cro.png" onclick="changeLangCro()" /></a>
+            <a href="#" id="LangUsa"><img src="usa.png" onclick="changeLangUsa()" /></a>
+            <label id="posljednjeAzuriran">Dokument posljednje ažuriran na datum: 27.04.2020</label>
+            <br />
+            <div class="section heading">
+                <h1>Tomislav Gudelj</h1>
+                <h2 class="color">mag. ing. comp.</h2>
+                <div id="photo"></div>
+            </div>
+            <div class="section">
+                <table>
+                    <tr>
+                        <th>email</th>
+                        <td>grudelj@gmail.com</td>
+                        <th id="Telefon">Telefon</th>
+                        <td>+385 92 239 7853</td>
+                    </tr>
+                    <tr>
+                        <th>LinkedIn</th>
+                        <td><a href="https://www.linkedin.com/in/tomislav-gudelj-98316963/">Tomislav Gudelj</a></td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+        </header>
+        <div class="left">
+            <h3 id="Prijevod0">Vještine</h3>
+            <p class="language" id="Prijevod1">Tehničke Vještine</p>
+            <p class="skill">.NET Core 3</p>
+            <div class="skill" id="skill-1"></div>
+            <p class="skill">.NET MVC</p>
+            <div class="skill" id="skill-2"></div>
+            <p class="skill">SQLSERVER / MSSQL</p>
+            <div class="skill" id="skill-3"></div>
+            <p class="skill">Angular 8</p>
+            <div class="skill" id="skill-4"></div>
+            <p class="skill">Knockout.JS</p>
+            <div class="skill" id="skill-5"></div>
+            <br />
+            <p class="language" id="Prijevod2">Ostale Vještine</p>
+            <p class="skill" id="Prijevod3">Menadžment Vremenom</p>
+            <div class="skill" id="skill-6"></div>
+            <p class="skill" id="Prijevod4">Timski Rad i Komunikacija</p>
+            <div class="skill" id="skill-7"></div>
+            <p class="skill" id="Prijevod5">Rješavanje Problema</p>
+            <div class="skill" id="skill-8"></div>
+            <p class="skill" id="Prijevod6">Komunikacija s Klijentima</p>
+            <div class="skill" id="skill-9"></div>
+            <p class="skill" id="Prijevod7">Demonstracija Produkata</p>
+            <div class="skill" id="skill-10"></div>
+            <!--
                 <p class="language">Digitalni Marketing</p>
                 <p class="skill">SEO</p>
                 <div class="skill" id="skill-10"></div>
@@ -351,180 +384,258 @@
                 <p class="skill">Marketing društvenih mreža</p>
                 <div class="skill" id="skill-12"></div>
                 -->
-                <h3 id="Prijevod8">Jezici</h3>
-                <p class="language" id="Prijevod9">Engleski jezik</p>
-                <div class="lang"><p class="lang" id="Prijevod10">Govor</p>C2</div>
-                <div class="lang"><p class="lang" id="Prijevod11">Pisanje</p>C2</div>
-                <div class="lang"><p class="lang" id="Prijevod12">Čitanje</p>C2</div>
-                <br />
-                <h3 id="Prijevod13">Alati</h3>
-                <!--<p class="language">Engleski jezik</p>-->
-                <div class="lang"><p class="lang">Sublime Text 3</p>&nbsp;</div>
-                <div class="lang"><p class="lang">Git</p>&nbsp;</div>
-                <div class="lang"><p class="lang">SourceAnywhere</p>&nbsp;</div>
-                <div class="lang"><p class="lang">Windows / Linux shell</p>&nbsp;</div>
-                <div class="lang"><p class="lang">Google / MS Office</p>&nbsp;</div>
+            <h3 id="Prijevod8">Jezici</h3>
+            <p class="language" id="Prijevod9">Engleski jezik</p>
+            <div class="lang">
+                <p class="lang" id="Prijevod10">Govor</p>C2
             </div>
-            <div class="right">
-                <h4 id="Prijevod13-1">Profil</h4>
-                <p class="pg" id="Prijevod14">
-                    Magistar računarstva s iskustvom u razvoju softvera u polju financijske tehnologije i bankarstva.
-                </p>
-                <br />
-                <p class="pg" id="Prijevod15">
-                    Tijekom svoje pozicije u poduzeću <a href="http://www.abba.hr/" class="firm1">ABBA FinTech Solutions and Services</a> razvijao sam središnje bankarske sustave koji omogućavaju cjelokupno poslovanje banaka - od provođenja zahtjeva za otvaranjem računa u poslovnicama do ostvarivanja podrške za rad suvremenih E-Money institucija, kao i institucija koje posluju u kriptovalutama. 
-                    <br />
-                    <br />
-                    U poduzeću <a href="http://www.udonis.co/" class="firm2">Udonis Performance Marketing Agency</a> gradio sam internetske marketinške kampanje nove generacije koje za svoj najviši cilj imaju <i>growth hacking</i>, radikalno povećanje prodaje proizvoda i usluga i povećanje svijesti o brendu kroz unaprijeđenje odrednica svih faza realizacije proizvoda i usluga i njihove prodaje.
-                   <!--
-                   Tijekom svog studija, iz znatiželje sam razvijao vještine u tehnologijama C++ i SQL, razvijajući pritom algoritme za rješavanje složenih matematičkih problema. Počevši još od srednje škole, sudjelovao sam u brojnim natjecanjima u algoritmima, među kojima je i europsko natjecanje ACM ICPC. Radom u osječkoj digitalnoj agenciji Udonis razvio sam i vještine digitalnog marketinga, izrade sadržaja i upravljanja kampanjama na društvenim mrežama.
-                   -->
-                </p>
-                <br />
-                <p class="pg" id="Prijevod16">
-                    U potrazi sam za idućim velikim izazovom u svojoj karijeri softverskog inženjera u novoj sredini u kojoj mogu usavršavati svoje područje djelovanja, a preko toga i poduzeće u kojem djelujem i svoju kreativnost, pedantnost i osjećaj za detalje izraziti na najbolji mogući način.
-                </p>
-                <br /><br />
-                <h4 id="Prijevod16-1">Radno iskustvo</h4>
-                <!--Implementirao sam konektore treće strane u postojeće vlasničke/autorske aplikacije radi bitnog proširenja funkcionalnosti aplikacija i opsega usluga krajnjim korisnicima, među kojima su i neki servisi od strane <a href="https://www.infobip.com/" class="targetFirm"> Infobip-a</a>. Razvijao sam integraciju vanjskih podataka o krajnjim korisnicima koji dolaze s izvora treće strane u vlasničke sustave konačnog središnjeg bankarskog sustava. Usavršavao sam funkcionalnost, prezentaciju i konzistentnost podataka već postojećih vlasničkih aplikacija koje su na produkciji kod većeg broja klijenata, čuvajući pritom kako nove, tako i stare funkcionalnosti na visokom standardu kvalitete i sigurnosti.-->
-                <a href="http://www.abba.hr/" class="firm1"><h5 class="firm1">ABBA FinTech Solutions and Services</h5></a>
-                <h6 id="Prijevod16-2">2018. - trenutno</h6>
-                <quote id="Prijevod17">Razvoj složenih FinTech aplikacija, razvoj složenih bankarskih modela podataka i progamabilnosti baza podataka, razvoj podrške raznih bankarskih procesa poput <i>onboarding-a</i> kroz razvoj pozadinskih serverskih servisa za automatsku obradu, održavanje konzistentnosti podataka, prezentacije i funkcionalnosti postojećih aplikacija, konvertiranje kofeina u programski kod.</quote>
+            <div class="lang">
+                <p class="lang" id="Prijevod11">Pisanje</p>C2
             </div>
+            <div class="lang">
+                <p class="lang" id="Prijevod12">Čitanje</p>C2
+            </div>
+            <br />
         </div>
-        
-        <!-- new page -->
-        <div class="page">
-            <div class="left">
-                <h3 id="Prijevod18">Hobi</h3>
-                <ul>
-                    <!--<img src="run_1209909.png"></img>-->
-                    <img src="77925-200.png"></img>
-                    <img src="weightlifting-icon-286x300.png"></img>
-                </ul>
-            </div>
-            <div class="right">
-                <a href="https://www.udonis.co/" class="firm2"><h5 class="firm2">Udonis Performance Marketing Agency</h5></a>
-                <h6>2017.</h6>
-                <quote>Market Research, Translation, Copywriting, Content Creation, Video Editing, Sales, Social Media Campaigning</quote>
+        <div class="right">
+            <h4 id="Prijevod13-1">Profil</h4>
+            <p class="pg" id="Prijevod14">
+                Magistar računarstva s iskustvom u razvoju softvera u polju financijske tehnologije i bankarstva.
+            </p>
+            <br />
+            <p class="pg" id="Prijevod15">
+                Poduzeće <a href="https://span.eu/" class="firm1">SPAN plc.</a> predstavlja moj trenutni angažman. Kao
+                full-stack developer u ovom poduzeću razvijam softver po narudžbi, a najveći dio mojeg truda bio je
+                iskorišten na razvoju nove PWA aplikacije naručene od strane europske državne službe. Ovaj B2C produkt
+                visoko je konfigurabilan kroz već postojeće rješenje u vlasništvu same državne službe, što je bilo
+                omogućeno kroz visoku razinu gotovo svakodnevne suradnje s razvojnim timom iz same državne službe, a
+                zapravo predstavlja repliku njihovog postojećeg softvera, samo u obliku offline web aplikacije (PWA).
                 <br />
                 <br />
-                <h4 id="Prijevod19">Edukacija</h4>
-                <h5 class="titula" id="Prijevod20">Magistar inženjer računarstva </h5>
-                <h6 class="titula" id="Prijevod21">mag. ing. comp.</h6>
-                <h5 id="Prijevod22">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek</h5>
-                <h6>2016. - 2018</h6>
-                <quote id="Prijevod23">
-                    Smjer: Informacijske i podatkovne znanosti<br />
-                    Ostvarena titula: Magistar inženjer računarstva (mag. ing. comp.)<br />
-                    Diplomski rad: 'Web platforma za zadavanje i rješavanje programskih problema'
-                </quote>
-                <br /><br />
-                <h5 class="titula" id="Prijevod24">Sveučilišni prvostupnik inženjer računarstva</h5>
-                <h6 class="titula" id="Prijevod25">univ. bacc. ing. comp.</h6>
-                <h5 id="Prijevod26">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek</h5>
-                <h6>2013. - 2016.</h6>
-                <quote id="Prijevod27">
-                    Smjer: Preddiplomski studij računarstva<br />
-                    Ostvarena titula: Sveučilišni prvostupnik (baccalaureus)
-inženjer računarstva (univ. bacc. ing. comp.)<br />
-Završni rad: 'Web aplikacija za natjecanje u programiranju'
-                </quote>
-                <br /><br />
+                Tijekom svoje pozicije u poduzeću <a href="http://www.abba.hr/" class="firm2">ABBA FinTech Solutions and
+                    Services</a> razvijao sam središnje bankarske sustave koji omogućavaju cjelokupno poslovanje banaka
+                - od provođenja zahtjeva za otvaranjem računa u poslovnicama do ostvarivanja podrške za rad suvremenih
+                E-Money institucija, kao i institucija koje posluju u kriptovalutama.
+                <br />
+                <br />
+                U poduzeću <a href="http://www.udonis.co/" class="firm3">Udonis Performance Marketing Agency</a> gradio
+                sam internetske marketinške kampanje nove generacije koje za svoj najviši cilj imaju <i>growth
+                    hacking</i>, radikalno povećanje prodaje proizvoda i usluga i povećanje svijesti o brendu kroz
+                unaprijeđenje odrednica svih faza realizacije proizvoda i usluga i njihove prodaje.
+            </p>
+            <br />
+            <p class="pg" id="Prijevod16">
+                U potrazi sam za idućim velikim izazovom u svojoj karijeri softverskog inženjera u novoj sredini u
+                obliku remote/freelance angažmana, jer smatram da posjedujem sve kvalitete koje su ključne za takav
+                oblik rada.
+                <!--
+                    U potrazi sam za idućim velikim izazovom u svojoj karijeri softverskog inženjera u novoj sredini u kojoj
+                mogu usavršavati svoje područje djelovanja, a preko toga i poduzeće u kojem djelujem i svoju
+                kreativnost, pedantnost i osjećaj za detalje izraziti na najbolji mogući način.
+                -->
+            </p>
+            <br /><br />
+        </div>
+    </div>
 
-                <h5>III. gimnazija, Osijek</h5>
-                <h6>2009. - 2013.</h6>
-                
+    <!-- new page -->
+    <div class="page">
+        <div class="left">
+            <!-- <h3 id="Prijevod18">Hobi</h3>
+            <ul>
+                <img src="77925-200.png"></img>
+                <img src="weightlifting-icon-286x300.png"></img>
+            </ul> -->
+            <h3 id="Prijevod13">Alati</h3>
+            <!--<p class="language">Engleski jezik</p>-->
+            <div class="lang">
+                <p class="lang">Visual Studio</p>&nbsp;
+            </div>
+            <div class="lang">
+                <p class="lang">Visual Studio Code</p>&nbsp;
+            </div>
+            <div class="lang">
+                <p class="lang">SSMS</p>&nbsp;
+            </div>
+            <div class="lang">
+                <p class="lang">Git</p>&nbsp;
+            </div>
+            <div class="lang">
+                <p class="lang">Azure DevOps (TFS, CI/CD)</p>&nbsp;
+            </div>
+            <div class="lang">
+                <p class="lang">Windows / Linux shell</p>&nbsp;
+            </div>
+            <div class="lang">
+                <p class="lang">Postman, SOAP UI, Fiddler</p>&nbsp;
             </div>
         </div>
-    </body>
-    <script>
-    	function changeLangCro(){
-    		document.getElementById("posljednjeAzuriran").innerHTML = "Dokument posljednje ažuriran na datum: 24.01.2019";
-    		document.getElementById("Telefon").innerHTML = "Telefon";
-    		document.getElementById("Prijevod0").innerHTML = "Vještine";
-    		document.getElementById("Prijevod1").innerHTML = "Tehničke Vještine";
-			document.getElementById("Prijevod2").innerHTML = "Ostale Vještine";
-			document.getElementById("Prijevod3").innerHTML = "Menadžment Vremenom";
-			document.getElementById("Prijevod4").innerHTML = "Timski Rad i Komunikacija";
-			document.getElementById("Prijevod5").innerHTML = "Rješavanje Problema";
-			document.getElementById("Prijevod6").innerHTML = "Predviđanje Zahtjeva Klijenata";
-			document.getElementById("Prijevod7").innerHTML = "Uključivanje Savjeta";
-			document.getElementById("Prijevod8").innerHTML = "Jezici";
-			document.getElementById("Prijevod9").innerHTML = "Engleski jezik";
-			document.getElementById("Prijevod10").innerHTML = "Govor";
-			document.getElementById("Prijevod11").innerHTML = "Pisanje";
-			document.getElementById("Prijevod12").innerHTML = "Čitanje";
-			document.getElementById("Prijevod13").innerHTML = "Alati";
-			document.getElementById("Prijevod13-1").innerHTML = "Profil";
-			document.getElementById("Prijevod14").innerHTML = "Magistar računarstva s iskustvom u razvoju softvera u polju financijske tehnologije i bankarstva.";
-			document.getElementById("Prijevod15").innerHTML = 
-			"Tijekom svoje pozicije u poduzeću <a href=\"http://www.abba.hr/\" class=\"firm1\">ABBA FinTech Solutions and Services</a> razvijao sam središnje bankarske sustave koji omogućavaju cjelokupno poslovanje banaka - od provođenja zahtjeva za otvaranjem računa u poslovnicama do ostvarivanja podrške za rad suvremenih E-Money institucija, kao i institucija koje posluju u kriptovalutama." + 
-                    "<br />" + 
-                    "<br />" + 
-                    "U poduzeću <a href=\"http://www.udonis.co/\" class=\"firm2\">Udonis Performance Marketing Agency</a> gradio sam internetske marketinške kampanje nove generacije koje za svoj najviši cilj imaju <i>growth hacking</i>, radikalno povećanje prodaje proizvoda i usluga i povećanje svijesti o brendu kroz unaprijeđenje odrednica svih faza realizacije proizvoda i usluga i njihove prodaje.";
-            document.getElementById("Prijevod16").innerHTML = "U potrazi sam za idućim velikim izazovom u svojoj karijeri softverskog inženjera u novoj sredini u kojoj mogu usavršavati svoje područje djelovanja, a preko toga i poduzeće u kojem djelujem i svoju kreativnost, pedantnost i osjećaj za detalje izraziti na najbolji mogući način.";
-            document.getElementById("Prijevod16-1").innerHTML = "Radno Iskustvo";
-            document.getElementById("Prijevod16-2").innerHTML = "2018. - trenutno";
-            document.getElementById("Prijevod17").innerHTML = "Razvoj složenih FinTech aplikacija, razvoj složenih bankarskih modela podataka i progamabilnosti baza podataka, razvoj podrške raznih bankarskih procesa poput <i>onboarding-a</i> kroz razvoj pozadinskih serverskih servisa za automatsku obradu, održavanje konzistentnosti podataka, prezentacije i funkcionalnosti postojećih aplikacija, konvertiranje kofeina u programski kod.";
-            document.getElementById("Prijevod18").innerHTML = "Hobi";
-            document.getElementById("Prijevod19").innerHTML = "Edukacija";
-            document.getElementById("Prijevod20").innerHTML = "Magistar inženjer računarstva";
-            document.getElementById("Prijevod21").innerHTML = "mag. ing. comp.";
-            document.getElementById("Prijevod22").innerHTML = "Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek"
-            document.getElementById("Prijevod23").innerHTML = "Smjer: Informacijske i podatkovne znanosti<br />" +
-                    "Ostvarena titula: Magistar inženjer računarstva (mag. ing. comp.)<br />" +
-                    "Diplomski rad: 'Web platforma za zadavanje i rješavanje programskih problema'";
-            document.getElementById("Prijevod24").innerHTML = "Sveučilišni prvostupnik inženjer računarstva";
-            document.getElementById("Prijevod25").innerHTML = "univ. bacc. ing. comp.";
-            document.getElementById("Prijevod26").innerHTML = "Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek";
-            document.getElementById("Prijevod27").innerHTML = "Smjer: Preddiplomski studij računarstva<br />" +
-                    "Ostvarena titula: Sveučilišni prvostupnik (baccalaureus)" +
-"inženjer računarstva (univ. bacc. ing. comp.)<br />" +
-"Završni rad: 'Web aplikacija za natjecanje u programiranju'";
-    	}
-    	function changeLangUsa(){
-    		document.getElementById("posljednjeAzuriran").innerHTML = "Document last updated on date: 24.01.2019";
-    		document.getElementById("Telefon").innerHTML = "Phone";
-    		document.getElementById("Prijevod0").innerHTML = "Skills";
-    		document.getElementById("Prijevod1").innerHTML = "Technical Skills";
-			document.getElementById("Prijevod2").innerHTML = "Other Skills";
-			document.getElementById("Prijevod3").innerHTML = "Time Management";
-			document.getElementById("Prijevod4").innerHTML = "Teamwork and Communication";
-			document.getElementById("Prijevod5").innerHTML = "Problem Solving";
-			document.getElementById("Prijevod6").innerHTML = "Anticipating Customer Needs";
-			document.getElementById("Prijevod7").innerHTML = "Accepting Advice";
-			document.getElementById("Prijevod8").innerHTML = "Languages";
-			document.getElementById("Prijevod9").innerHTML = "English";
-			document.getElementById("Prijevod10").innerHTML = "Spoken";
-			document.getElementById("Prijevod11").innerHTML = "Written";
-			document.getElementById("Prijevod12").innerHTML = "Reading";
-			document.getElementById("Prijevod13").innerHTML = "Tools";
-			document.getElementById("Prijevod13-1").innerHTML = "Profile";
-			document.getElementById("Prijevod14").innerHTML = "Master of Science with experience in Fintech and banking from the perspective of Software Development.";
-			document.getElementById("Prijevod15").innerHTML = 
-			"During my position at <a href=\"http://www.abba.hr/\" class=\"firm1\">ABBA FinTech Solutions and Services</a> my main responsibility was to design central banking systems that provide banks with a complete business solution that provides the institution with standard, but also designer functionalities - ranging from bank account management to crypto integration and a holistic modern E-Money Institution support." + 
-                    "<br />" + 
-                    "<br />" + 
-                    "At <a href=\"http://www.udonis.co/\" class=\"firm2\">Udonis Performance Marketing Agency</a> I built the next-gen Internet Marketing campaigns whose highest purpose was so called <i>growth hacking</i>, a type of radical increase in the sales volume of products and services, as well as the positive transformation of brand recognition through the advancement of traits of every single step on the way to great sales.";
-            document.getElementById("Prijevod16").innerHTML = "I am on a quest to challenge the next great achievement in my software development career, in a new environment in which I can perfect myself in my area of operation as well as perfect the environment itself. I seek to employ my creativity, meticulousness and attention to detail in the best possible way.";
-            document.getElementById("Prijevod16-1").innerHTML = "Work Experience";
-            document.getElementById("Prijevod16-2").innerHTML = "2018 - current";
-            document.getElementById("Prijevod17").innerHTML = "Engineering complex FinTech solutions, engineering complex banking data models and database programability, developing applications around various banking processes such as <i>customer onboarding</i> through the development of background services for automated processing etc., maintaining data model consistencies, maintaining the functionality and presentation of newly-built applications as well as legacy applications, converting caffeine into program code.";
-            document.getElementById("Prijevod18").innerHTML = "Hobby";
-            document.getElementById("Prijevod19").innerHTML = "Education";
-            document.getElementById("Prijevod20").innerHTML = "Master of Science in Information Technology";
-            document.getElementById("Prijevod21").innerHTML = "MSc IT";
-            document.getElementById("Prijevod22").innerHTML = "Faculty of electrical engineering, computer science and information technology, Osijek";
-            document.getElementById("Prijevod23").innerHTML = "Major: Information and data science<br />" +
-                    "Title: Master of Science in Information Technology (MSc IT)<br />" +
-                    "Master's Thesis: 'Web platform for designing and overcoming program problems'";
-            document.getElementById("Prijevod24").innerHTML = "Bachelor of Science in Information Technology";
-            document.getElementById("Prijevod25").innerHTML = "BSc IT";
-            document.getElementById("Prijevod26").innerHTML = "Faculty of electrical engineering, computer science and information technology, Osijek";
-            document.getElementById("Prijevod27").innerHTML = "Major: Computer Science<br />" +
-                    "Title: Bachelor of Science in Information Technology (BSc IT)<br />" +
-"Bachelor's Thesis: 'Programming  competition  web application'";
-        }
-	</script>
+        <div class="right">
+            <h4 id="Prijevod16-1">Radno iskustvo</h4>
+            <!--Implementirao sam konektore treće strane u postojeće vlasničke/autorske aplikacije radi bitnog proširenja funkcionalnosti aplikacija i opsega usluga krajnjim korisnicima, među kojima su i neki servisi od strane <a href="https://www.infobip.com/" class="targetFirm"> Infobip-a</a>. Razvijao sam integraciju vanjskih podataka o krajnjim korisnicima koji dolaze s izvora treće strane u vlasničke sustave konačnog središnjeg bankarskog sustava. Usavršavao sam funkcionalnost, prezentaciju i konzistentnost podataka već postojećih vlasničkih aplikacija koje su na produkciji kod većeg broja klijenata, čuvajući pritom kako nove, tako i stare funkcionalnosti na visokom standardu kvalitete i sigurnosti.-->
+            <a href="https://span.eu/" class="firm1">
+                <h5 class="firm1">SPAN plc.</h5>
+            </a>
+            <h6 id="Prijevod16-2">2019. - trenutno</h6>
+            <quote id="Prijevod17-1">Razvoj softverskih rješenja po narudžbi, uglavnom na projektima koji koriste .NET
+                Core WebApi i Angular 8. Održavanje legacy projekata pisanih u Knockout.js tehnologiji.</quote>
+            <a href="http://www.abba.hr/" class="firm2">
+                <h5 class="firm2">ABBA FinTech Solutions and Services</h5>
+            </a>
+            <h6 id="Prijevod16-3">2018. - 2019.</h6>
+            <quote id="Prijevod17-2">Razvoj složenih FinTech aplikacija, bankarskih modela podataka i
+                progamabilnosti baza podataka, razvoj podrške raznih bankarskih procesa poput <i>onboarding-a</i> kroz
+                pozadinske serverske servise za automatsku obradu, održavanje konzistentnosti podataka,
+                prezentacije i funkcionalnosti postojećih aplikacija, konvertiranje kofeina u programski kod.</quote>
+            <a href="https://www.udonis.co/" class="firm3">
+                <h5 class="firm3">Udonis Performance Marketing Agency</h5>
+            </a>
+            <h6>2017.</h6>
+            <quote>Market Research, Translation, Copywriting, Content Creation, Video Editing, Sales, Social Media
+                Campaigning</quote>
+            <br />
+            <br />
+            <h4 id="Prijevod19">Edukacija</h4>
+            <h5 class="titula" id="Prijevod20">Magistar inženjer računarstva </h5>
+            <h6 class="titula" id="Prijevod21">mag. ing. comp.</h6>
+            <h5 id="Prijevod22">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek</h5>
+            <h6>2016. - 2018.</h6>
+            <quote id="Prijevod23">
+                Smjer: Informacijske i podatkovne znanosti<br />
+                Ostvarena titula: Magistar inženjer računarstva (mag. ing. comp.)
+                <!-- <br />
+                Diplomski rad: 'Web platforma za zadavanje i rješavanje programskih problema' -->
+            </quote>
+            <br /><br />
+            <h5 class="titula" id="Prijevod24">Sveučilišni prvostupnik inženjer računarstva</h5>
+            <h6 class="titula" id="Prijevod25">univ. bacc. ing. comp.</h6>
+            <h5 id="Prijevod26">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek</h5>
+            <h6>2013. - 2016.</h6>
+            <quote id="Prijevod27">
+                Smjer: Preddiplomski studij računarstva<br />
+                Ostvarena titula: Sveučilišni prvostupnik (baccalaureus)
+                inženjer računarstva (univ. bacc. ing. comp.)
+                <!-- <br />
+                Završni rad: 'Web aplikacija za natjecanje u programiranju' -->
+            </quote>
+            <br /><br />
+            <!-- 
+            <h5>III. gimnazija, Osijek</h5>
+            <h6>2009. - 2013.</h6>
+            -->
+
+        </div>
+    </div>
+</body>
+<script>
+    function changeLangCro() {
+        document.getElementById("posljednjeAzuriran").innerHTML = "Dokument posljednje ažuriran na datum: 27.04.2020";
+        document.getElementById("Telefon").innerHTML = "Telefon";
+        document.getElementById("Prijevod0").innerHTML = "Vještine";
+        document.getElementById("Prijevod1").innerHTML = "Tehničke Vještine";
+        document.getElementById("Prijevod2").innerHTML = "Ostale Vještine";
+        document.getElementById("Prijevod3").innerHTML = "Menadžment Vremenom";
+        document.getElementById("Prijevod4").innerHTML = "Timski Rad i Komunikacija";
+        document.getElementById("Prijevod5").innerHTML = "Rješavanje Problema";
+        document.getElementById("Prijevod6").innerHTML = "Komunikacija s Klijentima";
+        document.getElementById("Prijevod7").innerHTML = "Demonstracija Produkata";
+        document.getElementById("Prijevod8").innerHTML = "Jezici";
+        document.getElementById("Prijevod9").innerHTML = "Engleski jezik";
+        document.getElementById("Prijevod10").innerHTML = "Govor";
+        document.getElementById("Prijevod11").innerHTML = "Pisanje";
+        document.getElementById("Prijevod12").innerHTML = "Čitanje";
+        document.getElementById("Prijevod13").innerHTML = "Alati";
+        document.getElementById("Prijevod13-1").innerHTML = "Profil";
+        document.getElementById("Prijevod14").innerHTML = "Magistar računarstva s iskustvom u razvoju softvera u polju financijske tehnologije i bankarstva.";
+        document.getElementById("Prijevod15").innerHTML =
+            "Poduzeće <a href=\"https://span.eu/\" class=\"firm1\">SPAN plc.</a> predstavlja moj trenutni angažman. Kao full-stack developer u ovom poduzeću razvijam softver po narudžbi, a najveći dio mojeg truda bio je iskorišten na razvoju nove PWA aplikacije naručene od strane europske državne službe. Ovaj B2C produkt visoko je konfigurabilan kroz već postojeće rješenje u vlasništvu same državne službe, što je bilo omogućeno kroz visoku razinu gotovo svakodnevne suradnje s razvojnim timom iz same državne službe, a zapravo predstavlja repliku njihovog postojećeg softvera, samo u obliku offline web aplikacije (PWA)." +
+            "<br />" +
+            "<br />" +
+            "Tijekom svoje pozicije u poduzeću <a href=\"http://www.abba.hr/\" class=\"firm2\">ABBA FinTech Solutions and Services</a> razvijao sam središnje bankarske sustave koji omogućavaju cjelokupno poslovanje banaka - od provođenja zahtjeva za otvaranjem računa u poslovnicama do ostvarivanja podrške za rad suvremenih E-Money institucija, kao i institucija koje posluju u kriptovalutama." +
+            "<br />" +
+            "<br />" +
+            "U poduzeću <a href=\"http://www.udonis.co/\" class=\"firm3\">Udonis Performance Marketing Agency</a> gradio sam internetske marketinške kampanje nove generacije koje za svoj najviši cilj imaju <i>growth hacking</i>, radikalno povećanje prodaje proizvoda i usluga i povećanje svijesti o brendu kroz unaprijeđenje odrednica svih faza realizacije proizvoda i usluga i njihove prodaje.";
+        document.getElementById("Prijevod16").innerHTML = "U potrazi sam za idućim velikim izazovom u svojoj karijeri softverskog inženjera u novoj sredini u kojoj mogu usavršavati svoje područje djelovanja, a preko toga i poduzeće u kojem djelujem i svoju kreativnost, pedantnost i osjećaj za detalje izraziti na najbolji mogući način.";
+        document.getElementById("Prijevod16-1").innerHTML = "Radno Iskustvo";
+        document.getElementById("Prijevod16-2").innerHTML = "2019. - trenutno.";
+        document.getElementById("Prijevod16-3").innerHTML = "2018. - 2019.";
+        document.getElementById("Prijevod17-1").innerHTML = "Razvoj softverskih rješenja po narudžbi, uglavnom na projektima koji koriste .NET Core WebApi i Angular 8. Održavanje legacy projekata pisanih u Knockout.js tehnologiji.";
+        document.getElementById("Prijevod17-2").innerHTML = "Razvoj složenih FinTech aplikacija, bankarskih modela podataka i baza podataka, razvoj podrške raznih bankarskih procesa poput <i>onboarding-a</i> kroz pozadinske serverske servise za automatsku obradu, održavanje konzistentnosti podataka, prezentacije i funkcionalnosti postojećih aplikacija.";
+        document.getElementById("Prijevod18").innerHTML = "Hobi";
+        document.getElementById("Prijevod19").innerHTML = "Edukacija";
+        document.getElementById("Prijevod20").innerHTML = "Magistar inženjer računarstva";
+        document.getElementById("Prijevod21").innerHTML = "mag. ing. comp.";
+        document.getElementById("Prijevod22").innerHTML = "Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek"
+        document.getElementById("Prijevod23").innerHTML = "Smjer: Informacijske i podatkovne znanosti<br />" +
+            "Ostvarena titula: Magistar inženjer računarstva (mag. ing. comp.)<br />";
+        // // document.getElementById("Prijevod23").innerHTML = "Smjer: Informacijske i podatkovne znanosti<br />" +
+        // //     "Ostvarena titula: Magistar inženjer računarstva (mag. ing. comp.)<br />" +
+        // //     "Diplomski rad: 'Web platforma za zadavanje i rješavanje programskih problema'";
+        document.getElementById("Prijevod24").innerHTML = "Sveučilišni prvostupnik inženjer računarstva";
+        document.getElementById("Prijevod25").innerHTML = "univ. bacc. ing. comp.";
+        document.getElementById("Prijevod26").innerHTML = "Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek";
+        document.getElementById("Prijevod27").innerHTML = "Smjer: Preddiplomski studij računarstva<br />" +
+            "Ostvarena titula: Sveučilišni prvostupnik (baccalaureus)" +
+            "inženjer računarstva (univ. bacc. ing. comp.)<br />";
+        // // document.getElementById("Prijevod27").innerHTML = "Smjer: Preddiplomski studij računarstva<br />" +
+        // //     "Ostvarena titula: Sveučilišni prvostupnik (baccalaureus)" +
+        // //     "inženjer računarstva (univ. bacc. ing. comp.)<br />" +
+        // //     "Završni rad: 'Web aplikacija za natjecanje u programiranju'";
+    }
+    function changeLangUsa() {
+        document.getElementById("posljednjeAzuriran").innerHTML = "Document last updated on date: 27 Apr 2020";
+        document.getElementById("Telefon").innerHTML = "Phone";
+        document.getElementById("Prijevod0").innerHTML = "Skills";
+        document.getElementById("Prijevod1").innerHTML = "Technical Skills";
+        document.getElementById("Prijevod2").innerHTML = "Other Skills";
+        document.getElementById("Prijevod3").innerHTML = "Time Management";
+        document.getElementById("Prijevod4").innerHTML = "Teamwork and Communication";
+        document.getElementById("Prijevod5").innerHTML = "Problem Solving";
+        document.getElementById("Prijevod6").innerHTML = "Client-facing Communication";
+        document.getElementById("Prijevod7").innerHTML = "Product Demonstration";
+        document.getElementById("Prijevod8").innerHTML = "Languages";
+        document.getElementById("Prijevod9").innerHTML = "English";
+        document.getElementById("Prijevod10").innerHTML = "Spoken";
+        document.getElementById("Prijevod11").innerHTML = "Written";
+        document.getElementById("Prijevod12").innerHTML = "Reading";
+        document.getElementById("Prijevod13").innerHTML = "Tools";
+        document.getElementById("Prijevod13-1").innerHTML = "Profile";
+        document.getElementById("Prijevod14").innerHTML = "Master of Science with experience in Fintech and banking from the perspective of Software Development.";
+        document.getElementById("Prijevod15").innerHTML =
+            "The company <a href=\"https://span.eu/\" class=\"firm1\">SPAN plc.</a> represents my current professional engagement. As a full-stack developer, within this company I develop custom software solutions, as requested by clients and co-designed by our team, working in tandem with the clients themselves. Within SPAN, the majority of my effort went into developing a custom application from scratch, as ordered by a european government agency. This B2C software is highly configurable through the use of the agency's already existing solution, which was made possible through frequent teamwork and workshops of high usability with the client themselves. The software in question actually represents a replica of the client's software that was in development for ten years, and I have built it solely almost explicitly." +
+            "<br />" +
+            "<br />" +
+            "During my position at <a href=\"http://www.abba.hr/\" class=\"firm2\">ABBA FinTech Solutions and Services</a> my main responsibility was to design central banking systems that provide banks with a complete business solution that provides the institution with standard, but also designer functionalities - ranging from bank account management to crypto integration and a holistic modern E-Money Institution support." +
+            "<br />" +
+            "<br />" +
+            "At <a href=\"http://www.udonis.co/\" class=\"firm3\">Udonis Performance Marketing Agency</a> I built the next-gen Internet Marketing campaigns whose highest purpose was so called <i>growth hacking</i>, a type of radical increase in the sales volume of products and services, as well as the positive transformation of brand recognition through the advancement of traits of every single step on the way to great sales.";
+        document.getElementById("Prijevod16").innerHTML = "I'm looking for a new professional challenge, this time in the remote/freelance domain. I believe I have a skillset well rounded for such type of work, and that I can meet any difficulty it brings forth.";
+        // // document.getElementById("Prijevod16").innerHTML = "I am on a quest to challenge the next great achievement in my software development career, in a new environment in which I can perfect myself in my area of operation as well as perfect the environment itself. I seek to employ my creativity, meticulousness and attention to detail in the best possible way.";
+        document.getElementById("Prijevod16-1").innerHTML = "Work Experience";
+        document.getElementById("Prijevod16-2").innerHTML = "2019 - current";
+        document.getElementById("Prijevod16-3").innerHTML = "2018 - 2019.";
+        document.getElementById("Prijevod17-1").innerHTML = "Custom software solutions development, centered mostly around .NET Core WebApi and Angular 8 technologies. Support of legacy projects developed in Knockout.js.";
+        document.getElementById("Prijevod17-2").innerHTML = "Engineering complex FinTech solutions, banking data models and database support, developing applications around various banking processes such as <i>customer onboarding</i> via use of background services for automated processing etc., maintaining data model consistencies, functionality and presentation of newly-built applications as well as legacy applications.";
+        // // document.getElementById("Prijevod18").innerHTML = "Hobby";
+        document.getElementById("Prijevod19").innerHTML = "Education";
+        document.getElementById("Prijevod20").innerHTML = "Master of Science in Information Technology";
+        document.getElementById("Prijevod21").innerHTML = "MSc IT";
+        document.getElementById("Prijevod22").innerHTML = "Faculty of electrical engineering, computer science and information technology, Osijek";
+        document.getElementById("Prijevod23").innerHTML = "Major: Information and data science<br />" +
+            "Title: Master of Science in Information Technology (MSc IT)<br />";
+        // // document.getElementById("Prijevod23").innerHTML = "Major: Information and data science<br />" +
+        // //     "Title: Master of Science in Information Technology (MSc IT)<br />" +
+        // //     "Master's Thesis: 'Web platform for designing and overcoming program problems'";
+        document.getElementById("Prijevod24").innerHTML = "Bachelor of Science in Information Technology";
+        document.getElementById("Prijevod25").innerHTML = "BSc IT";
+        document.getElementById("Prijevod26").innerHTML = "Faculty of electrical engineering, computer science and information technology, Osijek";
+        document.getElementById("Prijevod27").innerHTML = "Major: Computer Science<br />" +
+            "Title: Bachelor of Science in Information Technology (BSc IT)<br />";
+        // // document.getElementById("Prijevod27").innerHTML = "Major: Computer Science<br />" +
+        // //     "Title: Bachelor of Science in Information Technology (BSc IT)<br />" +
+        // //     "Bachelor's Thesis: 'Programming  competition  web application'";
+    }
+    changeLangUsa();
+</script>
+
 </html>
